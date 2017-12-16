@@ -113,8 +113,8 @@
             return false;
         }
 
-        function success_cb(res) {
-            res = JSON.parse(res,textStatus,jqXHR)
+        function success_cb(res,textStatus,jqXHR) {
+            res = JSON.parse(res)
             if (res.status) {
                 cookie = jqXHR.getResponseHeader('cookie')
                 expires = jqXHR.getResponseHeader('expires')
