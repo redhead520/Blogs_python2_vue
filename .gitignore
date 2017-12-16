@@ -1,0 +1,20 @@
+# sone local files
+.DS_Store
+*/.DS_Store
+.idea
+*/.idea
+# 
+*.pyc
+*.pdf
+*.zip
+*.rar
+*.exe
+*.iml
+*.ipr
+*.iws
+*.temp
+# sone file
+dist
+build
+temp
+
