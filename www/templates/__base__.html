@@ -114,7 +114,7 @@
         }
 
         function success_cb(res) {
-            res = JSON.parse(res)
+            res = JSON.parse(res,textStatus,jqXHR)
             if (res.status) {
                 cookie = jqXHR.getResponseHeader('cookie')
                 expires = jqXHR.getResponseHeader('expires')
