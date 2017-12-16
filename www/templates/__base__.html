@@ -36,7 +36,7 @@
            return $.ajax(host + url, {
                 type: "DELETE",
                 crossDomainma:true,
-                complete:fn
+                success:fn
             });
         }
         function patchApi(url, data, fn) {
@@ -113,7 +113,7 @@
             return false;
         }
 
-        function success_cb(res, textStatus, jqXHR) {
+        function success_cb(res) {
             res = JSON.parse(res)
             if (res.status) {
                 cookie = jqXHR.getResponseHeader('cookie')
